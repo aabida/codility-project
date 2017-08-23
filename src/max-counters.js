@@ -17,7 +17,7 @@ module.exports.solution = function(counterSize, operationsArray) {
 		else {
 			counter[operation] = 1 + Math.max(lastOverflow, counter[operation]);
 
-			maxElement = Math.max(lastOverflow, counter[operation]); // update the max
+			maxElement = Math.max(maxElement, counter[operation]); // update the max
 		}
 	}
 
